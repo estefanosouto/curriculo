@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estéfano Souto - SRE Sênior</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: #1a2a6c;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #fdbb2d;
+        }
+        
+        h3 {
+            color: #b21f1f;
+            margin: 10px 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .skill-category {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #1a2a6c;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #fdbb2d;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background-color: #fff9e6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #fdbb2d;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #1a2a6c;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin: 2px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .print-button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .print-button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ESTÉFANO SOUTO TRIGO</h1>
+            <p>SRE Sênior | Especialista em Cloud e Infraestrutura</p>
+            <div class="contact-info">
+                Rio de Janeiro | 📧 estefanosouto@hotmail.com | 📞 (21) 98669-1367<br>
+                🔗 <a href="#" style="color: white;">LinkedIn</a> | <a href="#" style="color: white;">GitHub</a>
+            </div>
+        </header>
+        
+        <div class="section">
+            <h2>Perfil Profissional</h2>
+            <p>Profissional com 10+ anos de experiência em infraestrutura corporativa, especializado em ambientes cloud, virtualização e automação. Expertise em troubleshooting avançado, governança de ambientes e otimização de infraestrutura. Espanhol fluente com experiência internacional (8 anos residindo na Espanha).</p>
+        </div>
+        
+        <div class="section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & Infraestrutura</h3>
+                    <ul>
+                        <li>AWS | Azure | GCP</li>
+                        <li>VMware vSphere | Hyper-V</li>
+                        <li>Terraform | CloudFormation</li>
+                        <li>Kubernetes | Docker</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Automação & DevOps</h3>
+                    <ul>
+                        <li>CI/CD (Jenkins/GitLab)</li>
+                        <li>PowerShell | Bash | Python</li>
+                        <li>Git | GitHub Actions</li>
+                        <li>Infraestrutura como Código</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Monitoramento & Observabilidade</h3>
+                    <ul>
+                        <li>Grafana | Prometheus</li>
+                        <li>Splunk | CloudWatch</li>
+                        <li>Zabbix | PRTG</li>
+                        <li>ELK Stack</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Sistemas & Redes</h3>
+                    <ul>
+                        <li>Windows Server | Linux (Ubuntu/CentOS)</li>
+                        <li>Active Directory | DNS | DHCP</li>
+                        <li>Firewalls (FortiGate, Mikrotik)</li>
+                        <li>VPNs | VLANs | Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Experiência Profissional</h2>
+            <h3>CAPESESP | Analista de Infraestrutura (2014–2025)</h3>
+            <p><strong>Foco em ambientes críticos e projetos de transformação digital</strong></p>
+            <ul>
+                <li>Liderança na migração de infraestrutura on-premises para cloud (Azure/AWS)</li>
+                <li>Implementação de soluções de observabilidade (Prometheus/Grafana) para monitoramento de ambientes críticos</li>
+                <li>Automação de processos com Terraform e PowerShell para provisionamento de infraestrutura</li>
+                <li>Gestão de ambientes Kubernetes para aplicações containerizadas</li>
+                <li>Administração de clusters VMware com foco em alta disponibilidade e otimização de recursos</li>
+                <li>Implementação e gestão de pipelines CI/CD com Jenkins e GitLab</li>
+                <li>Garantia de SLAs críticos em ambientes hospitalares através de monitoramento proativo</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Diferenciais para a Vaga</h2>
+            <div class="highlight">
+                <ul>
+                    <li><strong>Espanhol Fluente</strong> - 8 anos de residência na Espanha (Galícia), dominio nativo do idioma</li>
+                    <li><strong>Experiência em ambientes críticos</strong> - Telecom e Saúde com exigência de alta disponibilidade</li>
+                    <li><strong>Conhecimento em múltiplas clouds</strong> - AWS, Azure e GCP</li>
+                    <li><strong>Capacidade de automação</strong> - Terraform, PowerShell, Python e Bash</li>
+                    <li><strong>Cultural fit</strong> - Experiência internacional e facilidade de adaptação a diferentes fusos horários</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section two-column">
+            <div>
+                <h2>Formação Acadêmica</h2>
+                <ul>
+                    <li><strong>Tecnólogo em Redes de Computadores</strong> - Unicarioca (2012)</li>
+                    <li><strong>Curso de Espanhol Avançado</strong> - Instituto Cervantes</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>Certificações</h2>
+                <ul>
+                    <li>VMware vSphere Fundamentals</li>
+                    <li>Microsoft 365 Certified: Modern Desktop Administrator</li>
+                    <li>ITIL v4 Foundation</li>
+                    <li>AWS Cloud Practitioner (em andamento)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Expectativa Salarial</h2>
+            <p>À combinar, compatível com o mercado para posições SRE Sênior 100% remoto com exigência de espanhol fluente.</p>
+        </div>
+        
+        <button class="print-button" onclick="window.print()">Imprimir Currículo</button>
+    </div>
+</body>
+</html>
